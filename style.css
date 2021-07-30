@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+        "nav nav"
+        "sidebar main"
+}
+
+nav {
+    background-color: #0D0D0D;
+    grid-area: nav;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5rem;
+    font-size: 3rem;
+    list-style-type: none;
+}
+
+nav li {
+    color: #F2F2F2;
+    text-decoration: none;
+    font-stretch:extra-expanded;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    padding-top: 5rem;
+    background-color: #A6A6A6;
+    grid-area: sidebar;
+}
+
+#sidebar h1 {
+    color: #0D0D0D;
+    transition: all 0.2s;
+}
+
+#sidebar h1:hover {
+    color: #F2F2F2;
+}
+
+#sidebar a {
+    text-decoration: none;
+}
+
+#profilePicture {
+    width: 726px;
+    border-radius: 50%;
+}
+
+section {
+    margin-top: 3rem;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#email {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#email p {
+    color: #0D0D0D;
+    font-size: 1.2rem;
+    padding-left: 1.2rem;
+}
+
+#gitHubIcon {
+    color: #0D0D0D;
+    transition: all 0.2s;
+}
+
+#gitHubIcon:hover {
+    color: #F2F2F2;
+}
+
+#email {
+    margin-top: 3rem;
+    color: #0D0D0D;
+}
+
+#email p {
+    display: none;
+}
+
+#email:hover p {
+    display: block;
+}
+
+#linkedInIcon {
+    color: #0D0D0D;
+    transition: all 0.2s;
+}
+
+#linkedInIcon:hover {
+    color: #F2F2F2;
+}
+
+main {
+    background-color: #F2F2F2;
+    grid-area: main;
+}
